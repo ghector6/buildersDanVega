@@ -1,0 +1,1 @@
+Playground about working with XML services for practicing
