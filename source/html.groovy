@@ -1,6 +1,7 @@
 import groovy.xml.MarkupBuilder
+FileWriter writer = new FileWriter('html/about.html')
+MarkupBuilder builder = new MarkupBuilder(writer)
 
-MarkupBuilder builder = new MarkupBuilder()
 List courses = [
 		[id:1, name: 'Apache Groovy'],
 		[id:2, name:'JavaScript']
