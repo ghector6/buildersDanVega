@@ -12,7 +12,7 @@ List data = [
 builder1.html{
 	head{
 
-		title 'Exercise on HTML builders'
+		title 'Exercises on HTML builders'
 		description 'This is an exercise on HTML builders and structure '
 		keywords 'Hector, Groovy, Java, HMTL'
 	}
