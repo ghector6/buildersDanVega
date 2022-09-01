@@ -1,5 +1,6 @@
 import groovy.xml.MarkupBuilder 
 
+FileWriter writer1 = new FileWriter('html1/checkIfWorking.html')
 MarkupBuilder builder1 = new MarkupBuilder()
 
 List data = [
