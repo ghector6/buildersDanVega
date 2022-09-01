@@ -1,6 +1,12 @@
 import groovy.xml.MarkupBuilder
 
 MarkupBuilder builder = new MarkupBuilder()
+List courses = [
+		[id:1, name: 'Apache Groovy'],
+		[id:2, name:'JavaScript']
+
+]
+
 
 builder.html{
 	head{
@@ -18,13 +24,12 @@ builder.html{
 					th 'id'
 					th 'name'
 				}
-				tr{
-					td '1'
-					td 'Groovy'
-				}
-				tr{
-					td '2'
-					td 'HUGO'
+				courses.each{ course ->
+					tr{
+						td course.id
+						td course.name
+					}
+
 				}
 			}
 		}
