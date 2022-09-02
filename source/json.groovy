@@ -18,3 +18,4 @@ builder2.books{
 }
 
 println builder2.toString()
+println builder2.toPrettyString()
