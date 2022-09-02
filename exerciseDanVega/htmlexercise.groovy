@@ -1,7 +1,7 @@
 import groovy.xml.MarkupBuilder 
 
-FileWriter writer1 = new FileWriter('html1/checkIfWorking.html')
-MarkupBuilder builder1 = new MarkupBuilder(writer1)
+//FileWriter writer1 = new FileWriter('html1/checkIfWorking.html')
+MarkupBuilder builder1 = new MarkupBuilder()
 
 List data = [
 [isbn:978-1935182443, title:"Groovy in Action 2nd Edition", author:"Dierk Koenig", price:50.58],
@@ -24,10 +24,10 @@ builder1.html{
 			h2 'List of Groovy Books and Authors'
 			table{
 				tr{
-					th 'isbn'
-					th 'title'
-					th 'author'
-					th 'price'
+					th ('ISBN')
+					th ('TITLE')
+					th ('AUTHOR')
+					th ('PRICE')
 				}
 				data.each{ dat ->
 					tr{
