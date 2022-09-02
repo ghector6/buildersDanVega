@@ -1,7 +1,7 @@
 import groovy.xml.MarkupBuilder 
 
-//FileWriter writer1 = new FileWriter('html1/checkIfWorking.html')
-MarkupBuilder builder1 = new MarkupBuilder()
+FileWriter writer1 = new FileWriter('html1/checkIfWorking.html')
+MarkupBuilder builder1 = new MarkupBuilder(writer1)
 
 List data = [
 [isbn:'978-1935182443', title:"Groovy in Action 2nd Edition", author:"Dierk Koenig", price:50.58],
