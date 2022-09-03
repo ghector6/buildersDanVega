@@ -4,7 +4,7 @@ import groovy.transform.ToString
 class Book{
 	 String title
 	 String summary
-	 List<Section> sections = []
+	 List<Sectionz> sections = []
 }
 
 @ToString(includeNames = true)
